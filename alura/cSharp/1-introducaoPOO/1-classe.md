@@ -6,7 +6,7 @@
 //Sempre criar as classes com as primeiras letras em maiúsculo
 public class ContaCorrente
 {
-	public string titular;
+    public string titular;
     public int agencia;
     public int numero;
     public double saldo;
