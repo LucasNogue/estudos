@@ -10,29 +10,27 @@ acessar ou alterar os atributos.
 
 ```csharp
 public class ContaCorrente
+{
+  public Cliente titular;
+  public int agencia;
+  public int numero;
+  private double saldo = 100;
+				
+  //Método para definir
+  public void SetSaldo(double saldo)
+  {
+    if (saldo < 0)
     {
-        public Cliente titular;
-        public int agencia;
-        public int numero;
-        private double saldo = 100;
-				
-				//Método para definir
-        public void SetSaldo(double saldo)
-        {
-            if (saldo < 0)
-            {
-                return;
-            }
-
-            this.saldo = saldo;
-        }
-				
-	//Método para pegar
-	public double GetSaldo()
-        {
-            return saldo;
-        }
-	}
+      return;
+    }
+  this.saldo = saldo;
+  }
+  //Método para pegar
+  public double GetSaldo()
+  {
+    return saldo;
+  }
+}
 ```
 
 **PROPRIEDADES GET E SET**
@@ -60,29 +58,29 @@ Quando esse método apenas altera o valor do atributo seu nome terá um **set.**
 **Exemplo:**
 
 ```csharp
-    public class ContaCorrente
-    {
-        //public Cliente titular;
-        public int agencia;
-        public int numero;
-        private double _saldo = 100;
+public class ContaCorrente
+{
+  //public Cliente titular;
+  public int agencia;
+  public int numero;
+  private double _saldo = 100;
 
-        public double Saldo
-        {
-            get
-            {
-                return _saldo;
-            }
-            set
-            {
-                if (value < 0)
-                {
-                    return;
-                }
-                _saldo = value;
-            }
-        }
-		}
+  public double Saldo
+  {
+    get
+    {
+      return _saldo;
+    }
+    set
+    {
+      if (value < 0)
+      {
+        return;
+      }
+      _saldo = value;
+    }
+   }
+}
 ```
 
 **REGRAS DE NEGÓCIO**
@@ -97,12 +95,12 @@ Quando o atributo não possui regras de negócio para adicionar no **get** e **s
 
 ```csharp
 public class ContaCorrente
-    {
-		//Esse campos não possuem muitas regras de negócio
-        public Cliente Titular { get; set; }
-        public int Agencia { get; set; }
-        public int Numero { get; set; }
-	}
+{
+  //Esse campos não possuem muitas regras de negócio
+  public Cliente Titular { get; set; }
+  public int Agencia { get; set; }
+  public int Numero { get; set; }
+}
 ```
 
 **PRODUTIVIDADE**
