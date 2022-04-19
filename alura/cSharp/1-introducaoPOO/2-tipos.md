@@ -27,12 +27,11 @@ podemos alterar esse valores no momento da declaração.
 
 ```csharp
 public class ContaCorrente
-{
-		
-	public string titular;
+{		
+  public string titular;
   public int agencia;
   public int numero;
-	//Atribuindo valor padrão no atributo saldo
+  //Atribuindo valor padrão no atributo saldo
   public double saldo = 200;
 }
 ```
