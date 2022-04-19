@@ -27,8 +27,8 @@ public class ContaCorrente
             this.saldo = saldo;
         }
 				
-				//Método para pegar
-				public double GetSaldo()
+	//Método para pegar
+	public double GetSaldo()
         {
             return saldo;
         }
