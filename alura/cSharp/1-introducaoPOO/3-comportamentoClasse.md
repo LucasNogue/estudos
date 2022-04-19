@@ -19,25 +19,23 @@ nomenclaturas corretas de se utilizar nessas ocasiões.
 ```csharp
 public class ContaCorrente
 {
-	public string titular;
+    public string titular;
     public int agencia;
     public int numero;
     public double saldo = 200;
-		
-		
-	//Método Sacar da classe ContaCorrente
-	public bool Sacar(double valor)
+    //Método Sacar da classe ContaCorrente
+    public bool Sacar(double valor)
+    {
+    	if(this.saldo <valor)
 	{
-		if(this.saldo <valor)
-		{
-			return false;
-		}
-		else
-		{
-			this.saldo-= valor;
-			return true;
-		}
-	}		
+	 return false;
+	}
+	 else
+	{
+	  this.saldo-= valor;
+	  return true;
+	}
+     }		
 }
 ```
 
@@ -50,17 +48,15 @@ Declaramos um método sem retorno colocando o seu tipo como **void**
 ```csharp
 public Class ContaCorrente
 {
-	public string titular;
+    public string titular;
     public int agencia;
     public int numero;
     public double saldo = 200;
-		
-		
-	//Método Sacar da classe ContaCorrente
-	public void Depositar(double valor)
-	{
-		this.saldo+=valor;
-	}
+    //Método Sacar da classe ContaCorrente
+    public void Depositar(double valor)
+    {
+      this.saldo+=valor;
+    }
 }
 ```
 
@@ -72,16 +68,16 @@ public Class ContaCorrente
 //criados por essa classe
 public bool Transferir(double valor, ContaCorrente contaDestino)
 {
-	if (this.saldo <valor)
-	{
-		return false;		
-	}
-	else
-	{
-		contaDestino.Depositar(valor);
-		this.saldo-=valor;
-		return true;
-	}
+  if (this.saldo <valor)
+  {
+     return false;		
+  }
+  else
+  {
+     contaDestino.Depositar(valor);
+     this.saldo-=valor;
+     return true;
+  }
 }
 ```
 
@@ -97,15 +93,14 @@ Como o código com  **if** termina após o return não é necessário utilizar u
 //criados por essa classe
 public bool Transferir(double valor, ContaCorrente contaDestino)
 {
-		//Caso a condição do if esteja correta o código irá parar no **return false**
-		if (this.saldo <valor)
-		{
-			return false;		
-		}
-		//Se a condição do **if** não estiver correta o bloco de código abaixo será executado
-		contaDestino.Depositar(valor);
-		this.saldo-=valor;
-		return true;
-		
+   //Caso a condição do if esteja correta o código irá parar no **return false**
+   if (this.saldo <valor)
+   {
+      return false;		
+   }
+   //Se a condição do **if** não estiver correta o bloco de código abaixo será executado
+   contaDestino.Depositar(valor);
+   this.saldo-=valor;
+   return true;		
 }
 ```
