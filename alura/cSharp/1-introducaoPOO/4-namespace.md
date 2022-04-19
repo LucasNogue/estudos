@@ -10,19 +10,19 @@ Com os namespaces podemos inserir elementos de outras páginas em seu código ex
 //Vamos inserir os atributos da classe Cliente na classe ContaCorrente
 public class ContaCorrente
 {
-	//Colocando o namespace e a classe temos acesso a Classe
-	public 4___namespaceNull.Clienter titular;
-	//public string titular;
-	public int agencia;
-	public int numero;
-	public double saldo = 100;
+  //Colocando o namespace e a classe temos acesso a Classe
+  public 4___namespaceNull.Clienter titular;
+  //public string titular;
+  public int agencia;
+  public int numero;
+  public double saldo = 100;
 }
 
 public class Cliente
 {
-	public string nome;
-	public string cpf;
-	public string profissao;
+  public string nome;
+  public string cpf;
+  public string profissao;
 }
 ```
 
@@ -35,19 +35,19 @@ using 4___namespaceNull;
 
 public class ContaCorrente
 {
-	//Colocando o namespace e a classe temos acesso a Classe
-	public Clienter titular;
-	//public string titular;
-	public int agencia;
-	public int numero;
-	public double saldo = 100;
+  //Colocando o namespace e a classe temos acesso a Classe
+  public Clienter titular;
+  //public string titular;
+  public int agencia;
+  public int numero;
+  public double saldo = 100;
 }
 
 public class Cliente
 {
-	public string nome;
-	public string cpf;
-	public string profissao;
+  public string nome;
+  public string cpf;
+  public string profissao;
 }
 ```
 
@@ -59,22 +59,21 @@ Mais recomendado
 //Com o namespace não é necessário utilizar outro componente
 namespace 4___namespaceNull
 {
-	public class ContaCorrente
-	{
-		//Colocando o namespace e a classe temos acesso a Classe
-		public Clienter **titular**;
-		//public string titular;
-		public int agencia;
-		public int numero;
-		public double saldo = 100;
-	}
-	
-	public class Cliente
-	{
-		public string nome;
-		public string cpf;
-		public string profissao;
-	}
+  public class ContaCorrente
+  {
+    //Colocando o namespace e a classe temos acesso a Classe
+    public Clienter **titular**;
+    //public string titular;
+    public int agencia;
+    public int numero;
+    public double saldo = 100;
+  }	
+  public class Cliente
+  {
+    public string nome;
+    public string cpf;
+    public string profissao;
+  }
 }
 ```
 
