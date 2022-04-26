@@ -19,9 +19,7 @@ contaDoLucas.saldo = 50.50;
 
 **VALORES PADRÕES**
 
-Os atributos das classes já possuem valores padrões para caso não ocorra nenhuma atribuição, mas
-
-podemos alterar esse valores no momento da declaração.
+Os atributos das classes já possuem valores padrões para caso não ocorra nenhuma atribuição, mas podemos alterar esse valores no momento da declaração.
 
 **Exemplo:**
 
