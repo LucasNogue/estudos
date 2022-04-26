@@ -26,7 +26,7 @@ public class Diretor
       
     public virtual double GetBonificacao()
     {
-        return Salario * 0.10;
+        return Salario;
     }
 }
 ```
@@ -46,7 +46,7 @@ public class Funcionario
     }
 }
 
-//Com os dois pontos a classe diretor herda as características da classe Funcionario e os atributos rebetidos não são mais necessários
+//Com os dois pontos a classe diretor herda as características da classe Funcionario e os atributos repetidos não são mais necessários
 public class Diretor : Funcionario
 {      
     public virtual double GetBonificacao()
@@ -58,7 +58,7 @@ public class Diretor : Funcionario
 ### MODIFICADORES: VIRTUAL E OVERRIDE
 Em ambas as classes temos o método **getBonificação()** com uma diferença no **return**, se criarmos um objeto do tipo Funcionario e atribuir uma referência do tipo Diretor o método chamado será o da classe Funcionario, ou seja, o método da classe Diretor só será chamado se for explicitamente declarado.
 
-No C# podemos mudar esse comportamento utilizando algumas palavras reservadas.
+No C# podemos mudar esse comportamento utilizando alguns modificadores.
 
 **OVERRIDE**
 
@@ -66,7 +66,7 @@ Caso ocorra algum tipo de conflito de referência nos objetos o método que irá
 
 **VIRTUAL**
 
-O **virtual** complementa o **overrite**, ou seja, caso alguma outra classe que tenha o **overrite** quiser alterar o comportamento do método ele irá permitir.
+O **virtual** complementa o **override**, ou seja, caso alguma outra classe que tenha o **override** quiser alterar o comportamento do método ele irá permitir.
 
 **EXEMPLO**  
 ```csharp
@@ -101,6 +101,7 @@ Com o **base** podemos referir-se a métodos da classe base.
 **EXEMPLO**  
 ```csharp
 
+//Classe base
 public virtual class Funcionario
 {
     public string Nome { get; set; }
