@@ -55,6 +55,10 @@ public class Diretor : Funcionario
     }
 }
 ```
+### Herança Multipla
+
+Quando uma classe herda características somente de uma outra classe, dizemos que esta é uma herança simples. Quando uma classe herda de duas ou mais classes, temos um caso de herança múltipla.
+
 ### MODIFICADORES: VIRTUAL E OVERRIDE
 Em ambas as classes temos o método **getBonificação()** com uma diferença no **return**, se criarmos um objeto do tipo Funcionario e atribuir uma referência do tipo Diretor o método chamado será o da classe Funcionario, ou seja, o método da classe Diretor só será chamado se for explicitamente declarado.
 

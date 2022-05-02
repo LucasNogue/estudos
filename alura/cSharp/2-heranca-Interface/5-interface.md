@@ -1,11 +1,5 @@
- ### 5 - Herança Multipla
 
-Quando uma classe herda características somente de uma outra classe, dizemos que esta é uma herança simples. Quando uma classe herda de duas ou mais classes, temos um caso de herança múltipla.
-
-
-__________________________________________
-
-### INTERFACE
+# INTERFACE
 #### DEFINIÇÃO
 - Interface é um contrato que garante que a classe que herdar a interface terá os mesmos métodos
 - A interface nunca vai ter uma implementação em seus métodos
@@ -15,12 +9,34 @@ __________________________________________
 #### IMPLEMENTAÇÃO
 - Em toda interface o seu nome começa com um I, exemplo: Iautenticavel
 - Primeiro se coloca a classe e depois a interface
- - Não precisa inserir override nos métodos da classe que herdar interface
+- Não precisa inserir override nos métodos da classe que herdar interface
 
-__________________________________________
-### ABSTRACT
-- Se eu não quero que uma classe que herda uma classe abstrata precise utilizar seus métodos eu coloco ela como abstrata também.
+```csharp
+public interface Iautenticavel
+{
+    bool Autenticar(string senha);
+}
+```
 
-### De abstrato para abstrato**
+#### UTILIZANDO INTERFACE EM OUTRA CLASSE
+A classe abaixo está herdando uma classe abstrata e uma interface
 
-- temos que utilizar os mesmos parametros da classe base na classe filha tbm
+```csharp
+//Sempre a classe é inserida primeiro que a interface como no exemplo abaixo
+public abstract class FuncionarioAutenticavel : Funcionario, IAutenticavel
+{
+    public string Senha { get; set; }
+
+//Construtor da classe respeitando o construtor da classe Funcionario 
+    public FuncionarioAutenticavel(double salario, string cpf)
+        : base(salario, cpf)
+    {
+
+    }
+//A interface possui um método cujo nome é autenticar e retorna um bool, estamos cumprindo com o "contrato" e inserindo nessa classe também
+    public bool Autenticar(string senha)
+    {
+            return Senha == senha;
+    }
+}
+```
