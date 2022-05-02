@@ -46,7 +46,7 @@ Declaramos um método sem retorno colocando o seu tipo como **void**
 **Exemplo:**
 
 ```csharp
-public Class ContaCorrente
+public class ContaCorrente
 {
     public string titular;
     public int agencia;
