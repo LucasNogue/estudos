@@ -1,6 +1,6 @@
-# 1 - Classe
+# 1 - CLASSE
 
-**CRIANDO UMA CLASSE**
+### CRIANDO UMA CLASSE
 
 ```csharp
 //Sempre criar as classes com as primeiras letras em maiúsculo
@@ -13,7 +13,7 @@ public class ContaCorrente
 }
 ```
 
-**INSTÂNCIA DA CLASSE**
+#### INSTÂNCIA DA CLASSE
 
 ```csharp
 new ContaCorrente();

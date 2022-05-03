@@ -1,10 +1,9 @@
-# Construtor e Protected
+# CONSTRUTOR E PROTECTED
 
 ### CONSTRUTOR NA CLASSE BASE 
 Quando chamamos um construtor de classe derivada, também executamos o código do contrutor base.
 
-
-**EXEMPLO**
+**EXEMPLO:**
 ```csharp
 //Quando o contrutor da classe Desenvolvedor (classe derivada) for chamado o construtor da classe Funcionario (classe base) será executado primeiro
 public class Funcionario
@@ -25,7 +24,7 @@ public class Desenvolvedor : Funcionario
 
 Se inserirmos parâmetros na classe base, também será necessário inserir na classe derivada.
 
-**EXEMPLO**
+**EXEMPLO:**
 ```csharp
 public class Funcionario
 {
@@ -47,7 +46,7 @@ public class Desenvolvedor : Funcionario
 
 Com o modificador **private** evitamos que propriedades das classes sejam alteradas sem permissão, isso também vale para as classes filhas, ou seja, classes filhas não podem alterar atributos da classe base.
 
-**EXEMPLO** 
+**EXEMPLO:** 
 
 ```csharp
 //classe base
@@ -77,7 +76,7 @@ public class Desenvolvedor : Funcionario
 
 Para resolver esse problema podemos alterar o modificador de visibilidade do atributo _Salario de **private** para **protected**, com isso as classes filhas da classe base conseguirão alterar os atributos.
 
-**EXEMPLO** 
+**EXEMPLO:** 
 
 ```csharp
 //classe base
@@ -104,7 +103,7 @@ public class Desenvolvedor : Funcionario
 }
 ```
 
-### MODIFICADORES ESTUDADOS ATÉ O MOMENTO
+#### MODIFICADORES ESTUDADOS ATÉ O MOMENTO
 
 - **private** - palavra chave com a menor visibilidade é private.
 - **protected** - visível dentro da classe e também para as filhas, protected é relacionado com a herança.

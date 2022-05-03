@@ -1,10 +1,10 @@
-# 4 - Namespace composição e null
+# 4 - NAMESPACE COMPOSIÇÃO E NULL
 
-**NAMESPACE**
+### NAMESPACE
 
 Com os namespaces podemos inserir elementos de outras páginas em seu código existem diversas formas de utilizar o namespace, veja os exemplos abaixo.
 
-**Exemplo 1:**
+**EXEMPLO 1:**
 
 ```csharp
 //Vamos inserir os atributos da classe Cliente na classe ContaCorrente
@@ -26,7 +26,7 @@ public class Cliente
 }
 ```
 
-**Exemplo 2:**
+**EXEMPLO 2:**
 
 ```csharp
 //Vamos inserir os atributos da classe Cliente na classe ContaCorrente
@@ -51,7 +51,7 @@ public class Cliente
 }
 ```
 
-**Exemplo 3:**
+**EXEMPLO 3:**
 
 Mais recomendado
 
@@ -77,11 +77,11 @@ namespace 4___namespaceNull
 }
 ```
 
-**COMPOSIÇÃO DE CLASSES**
+### COMPOSIÇÃO DE CLASSES
 
 Agora com uma referência da classe Cliente na classe ContaCorrente (public Clienter titular;) podemos referenciar uma conta corrente a um cliente.
 
-**Exemplo:**
+**EXEMPLO:**
 
 ```csharp
 //Criando o objeto lucas
@@ -106,11 +106,11 @@ Console.WriteLine(contaDoLucas.titular.nome);
 Console.WriteLine(lucas.nome);
 ```
 
-**REFERÊNCIAS NULAS**
+### REFERÊNCIAS NULAS
 
 Se a referência não apontar para nenhuma outro objeto o resultado será **null**   
 
-**Exemplo:**
+**EXEMPLO:**
 
 ```csharp
 

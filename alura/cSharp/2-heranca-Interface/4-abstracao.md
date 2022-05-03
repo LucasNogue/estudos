@@ -1,10 +1,11 @@
-# Classes abstratas
+# CLASSES ABSTRATAS
+
 ### UTILIZANDO ABSTRAÇÃO
 
 Classe abstrata é um tipo de classe que não pode ser instanciada, ou seja, não conseguimos obter um objeto a partir de sua instanciação.
 Esse tipo de classe é utilizada quando não queremos criar um objeto a partir de uma classe “geral”, apenas de suas “subclasses”.
 
-**EXEMPLO**
+**EXEMPLO:**
 ```csharp
 //Declaramos uma classe abstrata utilizando o "abstract"
 public abstract class Funcionario
@@ -20,6 +21,7 @@ public abstract class Funcionario
 Funcionario carlos = new Funcionario();
 ```
 ### MÉTODOS ABSTRATOS
+
 O abstract funciona tanto para classes, quanto para métodos, os métodos abstratos obrigam as classes derivadas a criarem esses métodos e com isso evitam erros por esquecimento.
 Como os métodos abstratos irão ser sobrescritos não podemos ter um corpo de código nesses métodos.
 
@@ -29,7 +31,7 @@ Como os métodos abstratos irão ser sobrescritos não podemos ter um corpo de c
 - As classes derivadas devem sempre sobrescrevê-los
 - Não podemos ter um corpo de código nesses métodos
 
-**EXEMPLO**
+**EXEMPLO:**
 ```csharp
 //O código abaixo representa dois métodos abstratos
 public abstract void AumentarSalario();

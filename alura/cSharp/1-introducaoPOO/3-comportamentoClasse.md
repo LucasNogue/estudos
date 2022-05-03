@@ -1,6 +1,6 @@
-# 3 - Comportamentos de classe
+# 3 - COMPORTAMENTOS DE CLASSE
 
-**FUNÇÕES OU MÉTODOS**
+### FUNÇÕES OU MÉTODOS
 
 Funções ou métodos são ações que os objetos instanciados da classe podem executar.
 
@@ -14,7 +14,7 @@ nomenclaturas corretas de se utilizar nessas ocasiões.
 - Todo método representa uma ação
 - Utilizar verbos no infinitivo para a nomenclatura
 
-**Exemplo:**
+**EXEMPLO:**
 
 ```csharp
 public class ContaCorrente
@@ -39,7 +39,7 @@ public class ContaCorrente
 }
 ```
 
-**MÉTODO SEM RETORNO (MÉTODO)**
+#### MÉTODO SEM RETORNO (MÉTODO)
 
 Declaramos um método sem retorno colocando o seu tipo como **void**
 
@@ -60,7 +60,7 @@ public class ContaCorrente
 }
 ```
 
-**MÉTODOS COM MUITOS ARGUMENTOS**
+#### MÉTODOS COM MUITOS ARGUMENTOS
 
 ```csharp
 
@@ -81,7 +81,7 @@ public bool Transferir(double valor, ContaCorrente contaDestino)
 }
 ```
 
-**BOA PRÁTICA DE PROGRAMAÇÃO COM IF**
+### BOA PRÁTICA DE PROGRAMAÇÃO COM IF
 
 Como o código com  **if** termina após o return não é necessário utilizar um **else**
 

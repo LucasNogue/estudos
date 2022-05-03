@@ -1,10 +1,10 @@
-# Herança
+# HERANÇA
 
 ### SINTAXE DA HERANÇA
 
 Para evitar repetição de código podemos utilizar os recursos de herança
 
-**EXEMPLO**
+**EXEMPLO:**
 ```csharp
 //Temos duas classes praticamente idênticas
 public class Funcionario
@@ -32,7 +32,7 @@ public class Diretor
 ```
 Não é interessante repetir tanto código dessa maneira, então para resolver esse problema utilizaremos um " : Funcionario"  na classe diretor.
 
-**EXEMPLO**  
+**EXEMPLO:**  
 ```csharp
 public class Funcionario
 {
@@ -55,24 +55,25 @@ public class Diretor : Funcionario
     }
 }
 ```
-### Herança Multipla
+### HERANÇA MÚLTIPLA
 
 Quando uma classe herda características somente de uma outra classe, dizemos que esta é uma herança simples. Quando uma classe herda de duas ou mais classes, temos um caso de herança múltipla.
 
 ### MODIFICADORES: VIRTUAL E OVERRIDE
+
 Em ambas as classes temos o método **getBonificação()** com uma diferença no **return**, se criarmos um objeto do tipo Funcionario e atribuir uma referência do tipo Diretor o método chamado será o da classe Funcionario, ou seja, o método da classe Diretor só será chamado se for explicitamente declarado.
 
 No C# podemos mudar esse comportamento utilizando alguns modificadores.
 
-**OVERRIDE**
+#### OVERRIDE
 
 Caso ocorra algum tipo de conflito de referência nos objetos o método que irá se sobressair sobre a classe base será o com **override**.
 
-**VIRTUAL**
+#### VIRTUAL
 
 O **virtual** complementa o **override**, ou seja, caso alguma outra classe que tenha o **override** quiser alterar o comportamento do método ele irá permitir.
 
-**EXEMPLO**  
+**EXEMPLO:**  
 ```csharp
 //Adicionando virtual a classe Funcionario
 public virtual class Funcionario
@@ -98,11 +99,11 @@ public override class Diretor : Funcionario
 //Com essas alterações o método da classe Diretor irá se sobressair caso necessário 
 ```
 
-**BASE**
+### BASE
 
 Com o **base** podemos referir-se a métodos da classe base.
 
-**EXEMPLO**  
+**EXEMPLO:**  
 ```csharp
 
 //Classe base

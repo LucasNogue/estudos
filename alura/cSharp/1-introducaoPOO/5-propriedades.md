@@ -1,12 +1,12 @@
-# 5 - Propriedades
+# 5 - PROPRIEDADES
 
-**MÉTODOS PARA ALTERAR E OBTER ATRIBUTOS**
+### MÉTODOS PARA ALTERAR E OBTER ATRIBUTOS
 
 Não é recomendado acessar os atributos diretamente, então é necessário criar métodos para
 
 acessar ou alterar os atributos.
 
-**Exemplo:**
+**EXEMPLO:**
 
 ```csharp
 public class ContaCorrente
@@ -33,7 +33,7 @@ public class ContaCorrente
 }
 ```
 
-**PROPRIEDADES GET E SET**
+### PROPRIEDADES GET E SET
 
 Criamos dois métodos para acessar e alterar os atributos da classe, o nome disso é **encapsulamento**.
 
@@ -41,11 +41,11 @@ Quando temos um método que devolve algum valor nomeamos ele com um **get**, mas
 
 O C# possui maneiras mais interessantes de apresentar get e set.
 
-**GET**
+#### GET
 
 Quando temos um método que devolve algum valor nomeamos ele com um **get.**
 
-**SET**
+#### SET
 
 Quando esse método apenas altera o valor do atributo seu nome terá um **set.**
 
@@ -55,7 +55,7 @@ Quando esse método apenas altera o valor do atributo seu nome terá um **set.**
 - Usamos a palavra reservada **value em troca do argumento saldo.**
 - Quando algum atributo possui o mesmo nome do método colocamos um **_(underline)** na frente.
 
-**Exemplo:**
+**EXEMPLO:**
 
 ```csharp
 public class ContaCorrente
@@ -83,7 +83,7 @@ public class ContaCorrente
 }
 ```
 
-**REGRAS DE NEGÓCIO**
+#### REGRAS DE NEGÓCIO
 
 Quando o atributo não possui regras de negócio para adicionar no **get** e **set** utilizamos uma forma mais simplificada.
 
@@ -91,7 +91,7 @@ Quando o atributo não possui regras de negócio para adicionar no **get** e **s
 
 - Nome dos atributos em maiúsculo
 
-**Exemplo:**
+**EXEMPLO:**
 
 ```csharp
 public class ContaCorrente
@@ -103,11 +103,11 @@ public class ContaCorrente
 }
 ```
 
-**PRODUTIVIDADE**
+### PRODUTIVIDADE
 
 com o prop é possível acelerar o processo de criação desses atributos:
 
-**Exemplo:**
+**EXEMPLO:**
 
 ```csharp
 prop

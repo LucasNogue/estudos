@@ -1,6 +1,6 @@
-# 2 - Tipos
+# 2 - TIPOS
 
-**CRIANDO UM OBJETO**
+### CRIANDO UM OBJETO
 
 ```csharp
 ContaCorrente contaDoLucas = new ContaCorrente();
@@ -8,7 +8,7 @@ ContaCorrente contaDoLucas = new ContaCorrente();
 
 Com isso podemos começar a atribuir valores aos atributos nesse objeto
 
-**Exemplo:**
+**EXEMPLO:**
 
 ```csharp
 contaDoLucas.titular = "Lucas";
@@ -17,7 +17,7 @@ contaDoLucas.numero = 789;
 contaDoLucas.saldo = 50.50; 
 ```
 
-**VALORES PADRÕES**
+#### VALORES PADRÕES
 
 Os atributos das classes já possuem valores padrões para caso não ocorra nenhuma atribuição, mas podemos alterar esse valores no momento da declaração.
 
@@ -34,9 +34,9 @@ public class ContaCorrente
 }
 ```
 
-**TIPOS COMPLEXOS**
+### TIPOS COMPLEXOS
 
-**Tipo de valor**
+#### TIPO DE VALOR
 
 ```csharp
 int idadeLucas = 18;
@@ -46,7 +46,7 @@ int idadeLuan = 18;
 Console.WriteLine(idadeLucas==idadeLuan);
 ```
 
-**Tipo de referência**
+#### TIPO DE REFERÊNCIA
 
 ```csharp
 ContaCorrente contaLucas = new ContaCorrente();
@@ -59,7 +59,7 @@ Console.WriteLine(contaLucas == contaLuan);
 
 Se atribuirmos um objeto a outro objeto eles começarão a apontar para o mesmo espaço na memória e o resultado da comparação será true.
 
-**Exemplo:**
+**EXEMPLO:**
 
 ```csharp
 contaLucas = contaLuan;

@@ -1,4 +1,4 @@
-# Sobrecarga de método
+# SOBRECARGA DE MÉTODO
 
 ### MÉTODOS COM O MESMO NOME
 
@@ -7,7 +7,7 @@ Temos uma sobrecarga de método quando temos mais de um método com o mesmo nome
 **REGRA**
 - Os métodos não podem possuir o mesmo tipo de argumento
 
-**EXEMPLO 1**
+**EXEMPLO 1:**
 ```csharp
 //Nesse exemplo o projeto compila sem problemas
 public void EscreverNumero(int n)
@@ -20,8 +20,7 @@ public void EscreverNumero(double n)
 }
 ```
 
-**EXEMPLO 2**
-
+**EXEMPLO 2:**
 ```csharp
 //Nesse exemplo o projeto não compila por conta dos tipos dos argumentos serem os mesmos
 public void EscreverNumero(int n)
@@ -48,7 +47,7 @@ public void TestaSobrecarga(double a, double b)
 //O compilador resolve esse problema com conversão implícita;
 TestaSobrecarga(1, 2.0)
 ```
-**COMO O COMPILADOR RESOLVE ISSO?**
+#### COMO O COMPILADOR RESOLVE ISSO?
 
 - Existe uma sobrecarga exata para os tipos (int, double)? Não
 - O argumento 1 é aceito em quais sobrecargas? (int, int) e, com conversão implícita, (double, double)
@@ -59,7 +58,7 @@ TestaSobrecarga(1, 2.0)
 
 ### MÉTODOS COM MÚLTIPLOS ARGUMENTOS (ERRO)
 
-**EXEMPLO**
+**EXEMPLO:**
 ```csharp
 //Nesse exemplo ambos os métodos podem converter um argumento, então os dois funcionam para o mesmo exemplo.
 public void Teste(double a, int b)
