@@ -39,7 +39,7 @@ catch(Exception erro)
 
 ### THROW
 
-o throw passa adiante a exceção que o catch está lançando
+O throw aponta a ocorrência de uma exceção durante a execução do programa.
 
 ```csharp
 private static int Dividir(int numero, int divisor)
