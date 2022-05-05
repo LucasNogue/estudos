@@ -61,3 +61,51 @@ catch(SaldoInsuficienteException e)
 }
 
 ```
+Podemos criar um construtor que receba os valores do saldo e que também faça refência ao construtor com mensagem.
+
+**EXEMPLO:**
+
+```csharp
+//Criamos um construtor com os valores de saldo e saque e que faz referência (this) ao construtor com mensagem.
+public SaldoInsuficienteException(double saldo, double valorSaque)
+    :this("Tentativa de saque no valor de "+ valorSaque+ " em uma conta com saldo de "+ saldo)
+{
+    Saldo = saldo;
+    ValorSaque = valorSaque;
+}
+```
+
+Utilizando o novo construtor:
+```csharp
+//Criamos um construtor com os valores de saldo e saque e que faz referência (this) ao construtor com mensagem.
+
+ public void Sacar(double valor)
+{
+    if(valor < 0)
+    {
+        throw new ArgumentException("Valor inválido para o saque.", nameof(valor));
+    }
+
+    if (_saldo < valor)
+    {
+        throw new SaldoInsuficienteException(Saldo, valor);
+    }
+
+    _saldo -= valor;
+
+}
+```
+
+Testando:
+```csharp
+ContaCorrente conta = new ContaCorrente(5, 5);
+ContaCorrente conta2 = new ContaCorrente(6, 5);
+conta2.Transferir(-10, conta);
+```
+
+Resultado:
+```
+Argumento com problema: valor
+Ocorreu uma exceção do tipo ArgumentException.
+Valor inválido para a transferência. (Parameter 'valor')
+```
