@@ -3,7 +3,6 @@
 ### MÉTODOS PARA ALTERAR E OBTER ATRIBUTOS
 
 Não é recomendado acessar os atributos diretamente, então é necessário criar métodos para
-
 acessar ou alterar os atributos.
 
 **EXEMPLO:**

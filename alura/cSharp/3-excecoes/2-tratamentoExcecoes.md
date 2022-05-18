@@ -30,6 +30,7 @@ catch(NullReferenceException erro)
     Console.WriteLine(erro.StackTrace);
     Console.WriteLine("Aconteceu um erro!");
 }
+//Caso ocorra um erro que não seja do tipo "NullReferenceException" o catch abaixo será executado 
 catch(Exception erro) 
 {
     Console.WriteLine(erro.StackTrace);
