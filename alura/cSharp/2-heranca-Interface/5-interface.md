@@ -5,7 +5,7 @@
 
 - Interface é um contrato que garante que a classe que herdar a interface terá os mesmos métodos
 - A interface nunca vai ter uma implementação em seus métodos
-- Todos os membros de uma interface são públicos, ou seja, tudo dentro de uma interface é público, ou seja, o Modificador de Acesso de tudo, implicitamente, é publico
+- Todos os membros de uma interface são públicos, ou seja, tudo dentro de uma interface é público, com isso o Modificador de Acesso de tudo, implicitamente, é publico
 - Quando dizemos que uma classe herda uma interface estamos dizendo que essa classe terá os mesmos métodos que a interface e que não pode faltar
 
 #### IMPLEMENTAÇÃO
