@@ -4,7 +4,7 @@
 
 Imagine a seguinte situação, temos uma classe ContaCorrente e não podemos criar uma conta com o número e a agência com os valores 0, caso isso ocorra devemos lançar uma exceção.
 
-**EXEMPLO DA CLASSE:**
+**EXEMPLO DO CONSTRUTOR DA CLASSE:**
 ```csharp
 public ContaCorrente(int agencia, int numero)
 {
