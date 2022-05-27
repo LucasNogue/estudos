@@ -45,3 +45,10 @@ catch(SaldoInsuficienteException e)
 }
 
 ```
+
+### THROW X THROW E
+
+A expressão throw é utilizada para disparar uma exceção eo stackTrace pode apontar o "caminho" que a exceção fez até chegar em um bloco try/catch.
+
+
+Com o **throw** é mostrado esse caminho por completo, mas quando utilizamos **throw e** lançamentos uma nova exceção a partir do ponto de onde ele foi lançado, ou seja, podemos perder informações.
