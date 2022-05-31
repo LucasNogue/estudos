@@ -26,6 +26,7 @@ try
 catch(SaldoInsuficienteException e)
 {
     ContadorTransferenciasNaoPermitidas++;
+    //Lançando uma exceção com mensagem diferente
     throw new OperacaoFinanceiraException("Operação não realizada", e);
 }
 ```
