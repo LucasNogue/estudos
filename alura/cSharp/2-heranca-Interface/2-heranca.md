@@ -18,6 +18,7 @@ public class Funcionario
         return Salario * 0.10;
     }
 }
+
 public class Diretor
 {
     public string Nome { get; set; }
