@@ -10,9 +10,9 @@ Para inserir uma biblioteca e utilizar o seu código é necessário criar um pro
 //Projeto class library
 namespace LojaVirtual.Modelos
 {
-    public class Class1
+    public class Modelo
     {
-        public Class1()
+        public Modelo()
         {
             Console.WriteLine("Chamando o construtor");
         }
@@ -36,7 +36,7 @@ namespace LojaVirtual
     {
         public static void Main(string[] args)
         {
-            Class1 objeto1 = new Class1();
+            Modelo objeto1 = new Modelo();
             
             Console.WriteLine(objeto1);
         }
