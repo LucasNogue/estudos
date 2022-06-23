@@ -1,4 +1,4 @@
-# MODIFICADORES DE ACESSO EM BIBLIOTECAS
+# MODIFICADOR INTERNAL
 
 Podemos utilizar modificadores de acesso nas bibliotecas para garantir que apenas o necessário será acessado pelo projeto principal.
 
