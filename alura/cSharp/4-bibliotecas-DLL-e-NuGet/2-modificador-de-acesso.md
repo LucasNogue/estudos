@@ -1,4 +1,4 @@
-# MODIFICADOR INTERNAL
+# MODIFICADOR DE ACESSO EM BIBLIOTECAS
 
 Podemos utilizar modificadores de acesso nas bibliotecas para garantir que apenas o necessário será acessado pelo projeto principal.
 
@@ -86,4 +86,23 @@ namespace LojaVirtual
         }
     }
 }
+
+```
+Caso nenhum modificador seja inserido em determinada classe o compilador assume que essa classe é **internal**.
+
+**EXEMPLO:**
+
+```csharp
+namespace LojaVirtual.Modelos
+{
+    //Essa classe é considerada internal, pois não possui um modificador específico
+    class AutenticacaoHelper
+    {
+        public bool CompararSenhas(string senhaVerdadeira, string senhaTentativa)
+        {
+            return senhaVerdadeira == senhaTentativa;
+        }
+    }
+}
+
 ```
