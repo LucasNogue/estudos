@@ -2,11 +2,7 @@
 
 ### FUNÇÕES OU MÉTODOS
 
-Funções ou métodos são ações que os objetos instanciados da classe podem executar.
-
-A função retorna um valor já o método não, mas tanto função quanto método são
-
-nomenclaturas corretas de se utilizar nessas ocasiões.
+Funções ou métodos são ações que os objetos instanciados da classe podem executar. A função retorna um valor já o método não, mas tanto função quanto método são nomenclaturas corretas de se utilizar nessas ocasiões.
 
 **REGRAS**
 

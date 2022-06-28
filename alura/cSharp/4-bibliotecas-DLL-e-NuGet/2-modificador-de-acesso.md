@@ -106,3 +106,33 @@ namespace LojaVirtual.Modelos
 }
 
 ```
+
+É gerado um erro quando o modificador de acesso de um método que possui uma sobrecarga não possui o mesmo modificador da classe base.
+
+
+### MODIFICADOR INTERNAL PROTECTED
+
+Quando temos um método internal e abstrato temos uma situação onde deveriámos sobrescrever o método por ele ser abstrato, mas não conseguimos pois ele também é internal, para resolver essa situação utilizamos o modificador internal protected.
+Com o modificador internal protected o método fica visivel para as classes que também herdam em outros projetos.
+
+**EXEMPLO:**
+
+```csharp
+//Classe Usuario com o método abstrato
+public abstract class Usuario
+{
+        protected internal abstract void Escrever();
+}
+```
+
+```csharp
+//Classe estagiario em outro projeto utilizando o metodo
+//Quando vamos sobrescrever utilizamos apenas o protected
+public class Estagiario : Usuario
+{
+    protected override void Escrever()
+    {
+        Console.WriteLine("Teste");
+    }
+}
+```

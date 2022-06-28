@@ -2,7 +2,7 @@
 
 ### NAMESPACE
 
-Com os namespaces podemos inserir elementos de outras páginas em seu código existem diversas formas de utilizar o namespace, veja os exemplos abaixo.
+Com os namespaces podemos inserir elementos de outras páginas em seu código, existem diversas formas de utilizar o namespace, veja os exemplos abaixo.
 
 **EXEMPLO 1:**
 
