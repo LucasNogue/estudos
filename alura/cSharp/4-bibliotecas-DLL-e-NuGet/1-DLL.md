@@ -20,7 +20,9 @@ namespace LojaVirtual.Modelos
 }
 ```
 
-E adicione uma diretiva using no projeto principal com o nome da class library e utilize a classe criada
+Insira pela IDE a biblioteca no seu projeto.
+
+E adicione uma diretiva using no projeto principal com o nome da class library e utilize a classe criada.
 
 **EXEMPLO:**
 
