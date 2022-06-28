@@ -4,7 +4,11 @@
 
 Podemos criar uma biblioteca de classes para utilizar em um outro projeto, evitando mais repetições de código durante o desenvolvimento. Essas bebliotecas são representadas pela extenção do tipo DLL.
 
-Para inserir uma biblioteca e utilizar o seu código é necessário criar um projeto do tipo **class library**.  Digite o código que deseja utilizar no projeto principal nesse novo projeto do tipo class library.
+### REFERÊNCIA DE DLL
+
+#### OPÇÃO 1 - MESMO DIRETÓRIO
+
+Para inserir uma biblioteca e utilizar o seu código é necessário criar um projeto do tipo **class library**.  Digite o código que deseja utilizar no projeto principal nesse novo projeto.
 
 ```csharp
 //Projeto class library
@@ -44,5 +48,8 @@ namespace LojaVirtual
         }
     }
 }
-
 ```
+
+#### OPÇÃO 2 - DIRETÓRIO DIFERENTE
+
+Quando a biblioteca estiver em outro diretório basta procurar pela IDE o arquivo DLL e adicionar ao projeto.
