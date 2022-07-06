@@ -45,3 +45,27 @@ Essa parte da CPU é responsável por manipular grande parte desses dados, como 
 #### REGISTRADORES
 
 Os registradores são os responsáveis pela memória do processador, ou seja, ele armazena informações como: instrução atual, posição da memória, valores intermediários.
+
+### CICLO DE INSTRUÇÃO DO PROCESSADOR
+
+#### 1° FASE: BUSCAR
+
+Nessa fase o processador irá consultar a memória ram para buscar a instrução que ele precisa executar.
+
+**EXEMPLO:**
+
+O processador recebeu a instrução "pegar 3" da memória ram, essa informação será armazenada no registrador.
+
+#### 2° FASE: DECODIFICAR
+
+Nessa fase a ULA irá buscar na memória a posição 3 e verificar qual é a informação. 
+
+**EXEMPLO:**
+
+O ULA verificou que  o número 4 estava na posição 3 da memória.
+
+#### 3° FASE: EXECUTAR
+
+Na terceira fase o ULA irá registrar o número 4 em um acumulador (registrador especial). Finalizando essa fase o processador irá buscar a próxima instrução novamente e iniciar o ciclo mais uma vez.
+
+Se tivermos uma operação aritmética para executar depois desses ciclos, o ULA irá executar.
