@@ -5,6 +5,8 @@
 Com o código fonte interpretado temos o código de máquina, provavelmente esses arquivos ficarão lozalizados em um sistema de pastas controlado pelo SO (Sistema Operacional).
 Temos dois tipos de armazenamento: memória volátil e não volátil.
 
+---
+
 ### MEMÓRIA NÃO VOLÁTIL
 
 O sistema de pastas é considerado um tipo de memória não volátil, ou seja, que guarda a informação mesmo depois de desligar o computador.
@@ -20,6 +22,8 @@ O SSD tem como vantagem a sua velocidade e o seu tamanho que é considerado pequ
 
 Ambos tipos de memória são considerados como memória segundária.
 
+---
+
 ### MEMÓRIA VOLÁTIL
 
 Na memória volátil os dados são apagados depois que o computador estiver desligado.
@@ -28,6 +32,7 @@ Na memória volátil os dados são apagados depois que o computador estiver desl
 
 A memória RAM é utilizada para armazenar os dados temporários necessários para a execução das tarefas.
 
+---
 
 ### CPU (CENTRAL PROCESSING UNIT) 
 
@@ -45,6 +50,8 @@ Essa parte da CPU é responsável por manipular grande parte desses dados, como 
 #### REGISTRADORES
 
 Os registradores são os responsáveis pela memória do processador, ou seja, ele armazena informações como: instrução atual, posição da memória, valores intermediários.
+
+---
 
 ### CICLO DE INSTRUÇÃO DO PROCESSADOR
 
