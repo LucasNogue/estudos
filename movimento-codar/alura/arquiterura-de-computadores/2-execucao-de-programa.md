@@ -38,7 +38,7 @@ CPU também conhecida como processador, é o responsável por receber as instru�
 A unidade de controle irá analizar a instrução e entender 
 o seu significado.
 
-#### ULA (UNIDADE DE CONTROLE)
+#### ULA (UNIDADE LÓGICA E ARITMÉTICA)
 
 Essa parte da CPU é responsável por manipular grande parte desses dados, como operações aritméticas e comparações.
 
