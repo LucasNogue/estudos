@@ -1,2 +1,0 @@
-# TEMA DO ARQUIVO
-
